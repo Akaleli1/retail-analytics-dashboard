@@ -27,7 +27,7 @@ st.markdown("This dashboard uses **Data Engineering** to visualize sales perform
 # --- 2. DATA LOADING & CLEANING ---
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/online_retail_II.csv", encoding="ISO-8859-1")
+    df = pd.read_csv("data/online_retail_II.zip", encoding="ISO-8859-1")
     
     # Cleaning
     df = df.dropna(subset=['Customer ID'])
